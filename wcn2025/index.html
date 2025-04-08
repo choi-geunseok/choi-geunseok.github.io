@@ -1,25 +1,87 @@
----
-layout: default
----
-{% include hero.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WCN 2025 – Workshop on Computational Nanoscience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 2em; }
+    h1, h2 { color: #2c3e50; }
+    nav { background: #eee; padding: 1em; margin-bottom: 2em; }
+    nav a { margin-right: 1em; text-decoration: none; color: #0077cc; }
+    section { margin-bottom: 3em; }
+    footer { margin-top: 4em; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
 
-<div class="container">
-	<div class="row">
-		<div class="col col-12">
-			{% if site.posts.size > 0 %}
-				<h4 class="lates-title">Latest Posts</h4>
-			{% endif %}
-		</div>
-	</div>
-</div>
+  <header>
+    <h1>WCN 2025</h1>
+    <p><strong>Workshop on Computational Nanoscience</strong><br>
+    March 10–12, 2025 @ KAIST, Daejeon, South Korea</p>
+  </header>
 
-<div class="container">
-	<div class="row">
-	{% if site.posts.size > 0 %}
-		{% for post in paginator.posts %}
-			{% include article-content.html %}
-		{% endfor %}
-	{% endif %}
-	</div>
-</div>
-{% include pagination.html %}
+  <nav>
+    <a href="#cfp">Call for Papers</a>
+    <a href="#dates">Important Dates</a>
+    <a href="#speakers">Invited Speakers</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#committee">Committee</a>
+    <a href="#submission">Submission</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="cfp">
+    <h2>📣 Call for Papers</h2>
+    <p>We invite submissions in the areas of computational modeling, machine learning for materials, quantum transport, and related topics.</p>
+  </section>
+
+  <section id="dates">
+    <h2>🗓️ Important Dates</h2>
+    <ul>
+      <li>Submission Deadline: <strong>Jan 20, 2025</strong></li>
+      <li>Notification of Acceptance: Feb 10, 2025</li>
+      <li>Camera-Ready Due: Feb 25, 2025</li>
+      <li>Workshop Date: Mar 10–12, 2025</li>
+    </ul>
+  </section>
+
+  <section id="speakers">
+    <h2>🎤 Invited Speakers</h2>
+    <ul>
+      <li>Prof. Alice Quantum (MIT)</li>
+      <li>Dr. Bob Nano (Max Planck Institute)</li>
+      <li>Prof. Carol ML (KAIST)</li>
+    </ul>
+  </section>
+
+  <section id="schedule">
+    <h2>🗓️ Schedule</h2>
+    <p>Coming soon.</p>
+  </section>
+
+  <section id="committee">
+    <h2>👥 Organizing Committee</h2>
+    <ul>
+      <li>Geunseok Choi (KAIST)</li>
+      <li>Minji Lee (POSTECH)</li>
+      <li>Jinwoo Park (UNIST)</li>
+    </ul>
+  </section>
+
+  <section id="submission">
+    <h2>📤 Submission</h2>
+    <p>Please submit your extended abstract (2 pages max) via <a href="#">EasyChair</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>📧 Contact</h2>
+    <p>For inquiries, email us at: <a href="mailto:wcn2025@kaist.ac.kr">wcn2025@kaist.ac.kr</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WCN. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
